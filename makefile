@@ -1,4 +1,4 @@
-all: README game clean
+all: README game
 
 README:
 	echo "#GuessingGame" > README.md
