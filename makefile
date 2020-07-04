@@ -4,7 +4,8 @@ README:
 	echo "# GuessingGame" > README.md
 	date -R >> README.md
 	echo " ">>README.md
-	echo "Length of code of game: $(cat guessinggame.sh | wc -l)" >>README.md
+	lenc=$(cat guessinggame.sh | wc -l)
+	echo "length of the program is: $lenc" >>README.md
 game:
 	bash guessinggame.sh
 clean:
