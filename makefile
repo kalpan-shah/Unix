@@ -1,10 +1,10 @@
-all: README.md guessinggame.sh clean
+all: README game clean
 
-README.md:
-	echo "GuessingGame" > README.md
-	date -R >>README.md	
-	wc guessinggame.sh >>README.md
-guessinggame.sh:
+README:
+	echo "#GuessingGame" > README.md
+	date -R >> README.md	
+	(cat guessinggame.sh | wc -l) >>README.md
+game:
 	bash guessinggame.sh
 clean:
 	rm README.md
