@@ -1,7 +1,7 @@
 all: README game
 
 README:
-	echo "#GuessingGame" > README.md
+	echo "# GuessingGame" > README.md
 	date -R >> README.md	
 	(cat guessinggame.sh | wc -l) >>README.md
 game:
