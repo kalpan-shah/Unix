@@ -1,0 +1,2 @@
+hello just a new file to check up if git is well coping with github i.e. remote directory
+
